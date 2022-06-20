@@ -1,0 +1,43 @@
+h3.title{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+#inputid{
+    width: 20px;
+}
+
+div.form-group{
+    width: 1000px;
+}
+
+div.information{
+    padding-top: 30px;
+}
+
+form.changepassform{
+    padding-top: 10px;
+}
+
+#submitbutton{
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+
+div.googlemap{
+    padding-top: 50px;
+}
+
+div.sendmessage{
+    padding-top: 20px;
+}
+
+div.gmapdiv{
+    padding-top: 50px;
+    padding-right: 20px;
+    float: left;
+}
+
+div.bearinginput{
+    padding: 20px
+}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+<head>
+    {% block title %} Profile {% endblock %}
+    {% block linkcss %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css')}}">
+    {% endblock %}
+</head>
+
+{% block body %}
+<div class="panel panel-default">
+    <div class="information">
+        <h4>
+            <span class="badge badge-info">Name</span> 
+            <!--<a href="#" class="badge badge-dark">Change Name</a>-->
+            <br>{{user.firstname}}
+        </h4> 
+        <h4>
+            <span class="badge badge-info" >Email</span>
+            <!--<a href="#" class="badge badge-dark">Change Email</a>-->
+            <br> {{user.email}}
+        </h4>
+        <h4>
+            <br>
+            <span class="badge badge-dark" >Change Password</span>
+            <form method="POST" class="changepassform">
+                <div class="form-group">
+                    <input type="password" class="form-control" name="oldpass" id="oldpass" placeholder="Enter current password">
+                    <input type="password" class="form-control" name="newpass" id="newpass" placeholder="Enter new password">
+                    <input type="password" class="form-control" name="confirmnewpass" id="confirmnewpass" placeholder="Confirm new password">
+                </div>
+                <button type="submit" class="btn btn-success" id="submitbutton"> Change </button>
+            </form>
+        </h4>    
+    </div>
+</div>
+{% endblock %}
